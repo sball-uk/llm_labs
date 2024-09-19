@@ -1,0 +1,13 @@
+# Output data files
+data/*/*/*.docx
+data/*/*/*/*.docx
+data/*/*/*.xlsx
+data/*/*/*.json
+data/*/*/*.txt
+data/*/*/*.csv
+logs/*.txt
+
+# Misc
+.env
+.ipynb_checkpoints
+__pycache__
