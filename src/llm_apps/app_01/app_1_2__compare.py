@@ -73,7 +73,7 @@ if __name__ == "__main__":
             # Send the prompt to the LLM and choose which context to use
             response_str = cll.llm_response(
                 prompt=prompt,
-                system_context=cll.llm_contexts()["Film noir"],
+                system_context=cll.llm_contexts()["Film Noir"],
                 temperature=0.4)
 
             # Convert response to dict

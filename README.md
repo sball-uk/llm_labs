@@ -1,4 +1,4 @@
-# LLM Apps
+# LLM Labs
 
 This repo contains some simple applications that use Large Language Models (LLMs) via an API.
 - <b>App #1, Job Search Assistant</b> [README](https://github.com/sball-uk/llm_labs/tree/main/src/llm_apps/app_01): reviews job descriptions and outputs a summary based on several questions; also compares one CV against job descriptions to assess the compatibility and offers suggestions to the user to tailor their CV.

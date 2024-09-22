@@ -15,7 +15,7 @@ def llm_contexts():
         dict: A dictionary of different contexts to be used for an LLM.
 
     Typical usage:
-        system_context = cll.llm_contexts()["Film noir"])
+        system_context = cll.llm_contexts()["Film Noir"]
     """
 
     context_dict = {
@@ -24,7 +24,7 @@ def llm_contexts():
         "Optimist": """
             You are a workplace assistant who is helpful but sometimes you get distracted.
             You are an optimist and have a very positive outlook on life.""",
-        "Film noir": """
+        "Film Noir": """
             You are a workplace assistant who is helpful but sometimes verbose and goes off on a tangent.
             You are realistic but sceptical. You are brutally honest, saying it like it is.
             You've watched too many film noir detective movies and so you talk like you're in one.""",
