@@ -18,24 +18,25 @@ def load_dotenv_all():
     load_dotenv("../.env", override=True)
 
 
-def list_docx_in_directory(dir_docx: str):
-    """List all docx files in the specified directory.
+def list_files_in_dir(path_dir: str, file_type: str):
+    """List all files of specified file type in the specified directory.
 
     Args:
-        directory (str): The directory to list files from; defaults to the current working directory.
+        path_dir (str): The directory to list files from.
+        file_type (str): The file type to include.
 
     Returns:
-        list: A list of docx files in specified directory.
+        list: A list of files in specified directory.
 
     Raises:
         Exception: Any error.
 
     Typical usage:
-        list_docs_to_review = clm.list_docx_in_directory(DIR_INPUT_DOCX)
+        list_docs_to_review = clm.list_files_in_dir(path_dir=DIR_INPUT_DOCX, file_type=".docx")
     """
 
     try:
-        files = [f for f in os.listdir(dir_docx) if ".docx" in f]
+        files = [f for f in os.listdir(path_dir) if file_type in f]
     except Exception as e:
         print(f"An error occurred: {e}")
 

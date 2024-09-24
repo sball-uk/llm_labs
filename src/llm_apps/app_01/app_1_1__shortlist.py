@@ -19,7 +19,7 @@ clm.load_dotenv_all()
 if __name__ == "__main__":
 
     # Get list of filenames in input directory
-    list_docs_to_review = clm.list_docx_in_directory(DIR_INPUT_DOCX)
+    list_docs_to_review = clm.list_files_in_dir(path_dir=DIR_INPUT_DOCX, file_type=".docx")
 
     # Use the first 7 characters of the filename as an id, e.g. 'job-001'
     dict_docs_to_review = {filename[:7]: filename for filename in list_docs_to_review}

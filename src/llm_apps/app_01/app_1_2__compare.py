@@ -20,11 +20,11 @@ clm.load_dotenv_all()
 if __name__ == "__main__":
 
     # Load the CV
-    cv_filename = clm.list_docx_in_directory(DIR_INPUT_DOCX_CV)[0]
+    cv_filename = clm.list_files_in_dir(path_dir=DIR_INPUT_DOCX_CV, file_type=".docx")[0]
     cv_text = clm.load_docx_to_str(DIR_INPUT_DOCX_CV + cv_filename)[1]
 
     # Get list of filenames in input directory
-    list_docs_to_review = clm.list_docx_in_directory(DIR_INPUT_DOCX_JOB)
+    list_docs_to_review = clm.list_files_in_dir(path_dir=DIR_INPUT_DOCX_JOB, file_type=".docx")
 
     # Use the first 7 characters of the filename as an id, e.g. 'job-001'
     dict_docs_to_review = {filename[:7]: filename for filename in list_docs_to_review}
